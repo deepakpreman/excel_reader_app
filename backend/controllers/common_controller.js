@@ -53,7 +53,7 @@ exports.excelReader = function(req,res) {
         data.shift();
         data.shift();
         // console.log(data);
-        fs.unlinkSync('./uploads/' + req.file.filename)
+        // fs.unlinkSync('./uploads/' + req.file.filename)
         res.json({
             status : true,
             message : "Success",
